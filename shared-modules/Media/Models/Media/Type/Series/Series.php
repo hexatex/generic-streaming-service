@@ -1,6 +1,6 @@
 <?php
 
-namespace Series\Models\Media\Type;
+namespace Media\Models\Media\Type\Series;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
@@ -12,8 +12,8 @@ class Series extends Model
     /*
      * Relationships
      */
-    public function video()
+    public function seasons()
     {
-    	$this->morphOne(Video::class);
+    	return $this->hasMany(Season::class)->orderBy('season_number');
     }
 }

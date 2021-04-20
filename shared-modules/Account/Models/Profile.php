@@ -16,4 +16,9 @@ class Profile
     {
         return $this->belongsTo(Account::class);
     }
+
+    public function feed()
+    {
+    	return $this->hasOne(App\Models\Feed::class);
+    }
 }

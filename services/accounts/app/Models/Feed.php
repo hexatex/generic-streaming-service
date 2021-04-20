@@ -9,5 +9,11 @@ class Feed extends Model
 {
     use HasFactory;
 
-    
+    /*
+     * Relationships
+     */
+    public function profile()
+    {
+    	return $this->belongsTo(Profile::class);
+    }
 }
