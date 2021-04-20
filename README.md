@@ -10,7 +10,7 @@ Each Service and each shared module should later become their own git repositori
 This project contains four micro services.
 
 ### Auth
-Authenticate the user, allow the user to select a profile. The profile will contain a list of mirrors for the other client apis. Mirror lists will be selected based on current location and account/profile selected.
+Authenticate the user, allow the user to select a profile. The profile will contain a list of mirrors for the other client apis. Mirror lists will be selected based on client, current location and account/profile selected.
 
 ### Accounts
 This service will supply the client with account/profile specific data, such as account, profile & feed.
